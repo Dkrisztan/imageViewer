@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lilla És Krisztián Online Albuma</title>
+  <meta charset="utf-8" />
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <!--<link rel="icon" href="https://img.icons8.com/bubbles/500/000000/filled-like.png">-->
+  <link rel="icon" href="https://img.icons8.com/clouds/500/000000/filled-like.png">
+</head>
+
+<body>
+  <center>
+    <input type="button" value="🐨" style="width:50px; height:50px; outline:none"; onclick=koala();>
+    <p id="szoveg">A Legjobb Másfél Év Képekben</p>
+    <input type="button" value="🦒" style="width:50px; height:50px; outline:none"; onclick=zsiraf();>
+  </center>
+  <table style="width:100%">
+    <tr>
+      <th>
+        <center><input type="image" src="left.png" style="width:100px; height:75px; outline:none"; onclick=backward(); id="backward"disabled /></br></center>
+      </th>
+      <th>
+        <div class="imgbox">
+          <img src="images/20190101_193018.jpg" id="kep"/>
+        </div>
+        <audio id="zene" loop>
+          <source src="siasnowman.mp3" type="audio/mpeg">
+        </audio>
+        <input type="image" src="pause.png" style="width:50px; height:50px; outline:none"; value="start" onclick=indit(); id = "media"/></br>
+        
+        <!--<input type="image" src="play.png" style="width:50px; height:50px;" value="stop" onclick=megall(); /> <br />  ez nem kell mert a gomb valtja magat   -->
+      </th>
+      <th>
+        <input type="image" src="right.png" style="width:=100px; height:75px; outline:none;" onclick=forward(); id="forward"/> <br/>
+      </th>
+    </tr>
+  </table>
+</body>
+</html>
