@@ -855,7 +855,7 @@ function forward() {
         nr = nr + 1;
         var s = images[nr];
         document.getElementById("backward").disabled = false;
-        document.getElementById("kep").src = "http://dancsresidence.go.ro/images/" + s;
+        document.getElementById("kep").src = `images/${s}`;
     }
     if (nr == kepsz) document.getElementById("forward").disabled = true;
     else document.getElementById("forward").disabled = false;
